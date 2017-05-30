@@ -49,7 +49,7 @@ function buildRequestEl(requestUrl, debugDataUrl) {
     anchor.href = url;
     path = decodeURIComponent(anchor.pathname + anchor.search);
 
-    return $('<div class="request"></div>')
+    return $('<li></li>')
         .text(path)
         .attr('title', url)
         .on('click', function() {

@@ -44,28 +44,36 @@ article {
   width: 100%;
 }
 
-.request {
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol > li {
+  background-color: #FFF;
+  color: #000;
+  cursor: pointer;
   height: 3em;
   line-height: 3em;
-  padding-left: 0.5em;
-  cursor: pointer;
-
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  padding-left: 0.5em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.request:nth-child(even) {
-  background: rgba(0, 0, 0, 0.05);
+ol > li:nth-child(even) {
+  background-color: #F6F6F6;
+  color: #000;
 }
 
-.request:hover {
-  background: #ffc;
+ol > li:hover {
+  background-color: #FFC;
 }
 
-.request.selected {
+ol > li.selected {
+  background-color: #D0DFFA;
   font-weight: bold;
-  background: #d0dffa;
 }
 
 .split-view-resizer {
